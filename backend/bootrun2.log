@@ -1,0 +1,85 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources UP-TO-DATE
+> Task :classes UP-TO-DATE
+> Task :resolveMainClassName UP-TO-DATE
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-05T17:00:02.612+05:30  INFO 21596 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : Starting CampusGuideApplicationKt using Java 21.0.6 with PID 21596 (C:\Users\sanik\OneDrive\Documents\Default Project\VirtualCampusGuide\backend\build\classes\kotlin\main started by sanik in C:\Users\sanik\OneDrive\Documents\Default Project\VirtualCampusGuide\backend)
+2026-10-05T17:00:02.614+05:30  INFO 21596 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T17:00:03.694+05:30  INFO 21596 --- [campus-guide-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T17:00:03.772+05:30  INFO 21596 --- [campus-guide-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 6 JPA repository interfaces.
+2026-10-05T17:00:04.296+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2026-10-05T17:00:04.311+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T17:00:04.311+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-10-05T17:00:04.439+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-05T17:00:04.441+05:30  INFO 21596 --- [campus-guide-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1773 ms
+2026-10-05T17:00:04.777+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-05T17:00:05.020+05:30  INFO 21596 --- [campus-guide-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-10-05T17:00:05.125+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-05T17:00:06.761+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T17:00:06.916+05:30  INFO 21596 --- [campus-guide-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T17:00:07.415+05:30  INFO 21596 --- [campus-guide-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@7be7c052
+2026-10-05T17:00:07.423+05:30  INFO 21596 --- [campus-guide-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T17:00:11.702+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: create table announcements (id bigint not null auto_increment, author varchar(255), date varchar(255), message varchar(255), title varchar(255), primary key (id)) engine=InnoDB
+Hibernate: alter table locations add column floor varchar(255)
+Hibernate: create table users (id bigint not null auto_increment, email varchar(255), name varchar(255), password_hash varchar(255), role varchar(255), primary key (id)) engine=InnoDB
+Hibernate: alter table users drop index if exists UK6dotkott2kjsp8vw4d0m25fb7
+Hibernate: alter table users add constraint UK6dotkott2kjsp8vw4d0m25fb7 unique (email)
+2026-10-05T17:00:12.328+05:30  INFO 21596 --- [campus-guide-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T17:00:15.950+05:30  WARN 21596 --- [campus-guide-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T17:00:17.293+05:30  INFO 21596 --- [campus-guide-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2026-10-05T17:00:17.320+05:30  INFO 21596 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : Started CampusGuideApplicationKt in 15.183 seconds (process running for 15.731)
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? limit ?
+Hibernate: insert into users (email,name,password_hash,role) values (?,?,?,?)
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? limit ?
+Hibernate: insert into users (email,name,password_hash,role) values (?,?,?,?)
+2026-10-05T17:00:24.265+05:30  INFO 21596 --- [campus-guide-backend] [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-05T17:00:24.266+05:30  INFO 21596 --- [campus-guide-backend] [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-05T17:00:24.268+05:30  INFO 21596 --- [campus-guide-backend] [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.floor,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0
+Hibernate: select a1_0.id,a1_0.author,a1_0.date,a1_0.message,a1_0.title from announcements a1_0
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.floor,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0 where upper(l1_0.name) like upper(?) escape '\\' or upper(l1_0.category) like upper(?) escape '\\'
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: insert into locations (building,category,contact,description,floor,latitude,longitude,name,opening_hours) values (?,?,?,?,?,?,?,?,?)
+Hibernate: select u1_0.id from users u1_0 where u1_0.email=? limit ?
+Hibernate: insert into users (email,name,password_hash,role) values (?,?,?,?)
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password_hash,u1_0.role from users u1_0 where u1_0.email=?
+Hibernate: select count(*) from locations l1_0 where l1_0.id=?
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.floor,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0 where l1_0.id=?
+Hibernate: delete from locations where id=?
+
+> Task :bootRun FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command 'C:\Program Files\JetBrains\IntelliJ IDEA 2025.1\jbr\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 10m 14s
+4 actionable tasks: 1 executed, 3 up-to-date

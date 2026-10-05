@@ -1,0 +1,71 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.10.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+> Task :checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :compileKotlin UP-TO-DATE
+> Task :compileJava NO-SOURCE
+> Task :processResources
+> Task :classes
+> Task :resolveMainClassName
+
+> Task :bootRun
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.3.4)
+
+2026-10-05T16:25:17.675+05:30  INFO 29792 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : Starting CampusGuideApplicationKt using Java 21.0.6 with PID 29792 (C:\Users\sanik\OneDrive\Documents\Default Project\VirtualCampusGuide\backend\build\classes\kotlin\main started by sanik in C:\Users\sanik\OneDrive\Documents\Default Project\VirtualCampusGuide\backend)
+2026-10-05T16:25:17.681+05:30  INFO 29792 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T16:25:18.931+05:30  INFO 29792 --- [campus-guide-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T16:25:19.021+05:30  INFO 29792 --- [campus-guide-backend] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77 ms. Found 4 JPA repository interfaces.
+2026-10-05T16:25:20.095+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 9090 (http)
+2026-10-05T16:25:20.123+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T16:25:20.124+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2026-10-05T16:25:20.281+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-10-05T16:25:20.283+05:30  INFO 29792 --- [campus-guide-backend] [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2466 ms
+2026-10-05T16:25:20.608+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-10-05T16:25:20.812+05:30  INFO 29792 --- [campus-guide-backend] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-10-05T16:25:20.913+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-10-05T16:25:21.804+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T16:25:21.873+05:30  INFO 29792 --- [campus-guide-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T16:25:22.078+05:30  INFO 29792 --- [campus-guide-backend] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.mariadb.jdbc.Connection@50a7c72b
+2026-10-05T16:25:22.080+05:30  INFO 29792 --- [campus-guide-backend] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T16:25:24.049+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T16:25:24.164+05:30  INFO 29792 --- [campus-guide-backend] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T16:25:26.971+05:30  WARN 29792 --- [campus-guide-backend] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T16:25:28.284+05:30  INFO 29792 --- [campus-guide-backend] [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 9090 (http) with context path '/'
+2026-10-05T16:25:28.298+05:30  INFO 29792 --- [campus-guide-backend] [           main] c.e.c.CampusGuideApplicationKt           : Started CampusGuideApplicationKt in 11.217 seconds (process running for 11.811)
+2026-10-05T16:25:37.958+05:30  INFO 29792 --- [campus-guide-backend] [nio-9090-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-05T16:25:37.959+05:30  INFO 29792 --- [campus-guide-backend] [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-05T16:25:37.963+05:30  INFO 29792 --- [campus-guide-backend] [nio-9090-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0
+Hibernate: select d1_0.id,d1_0.building,d1_0.contact_email,d1_0.description,d1_0.hod,d1_0.name from departments d1_0
+Hibernate: select f1_0.id,f1_0.description,f1_0.location,f1_0.name,f1_0.opening_hours from facilities f1_0
+Hibernate: select e1_0.id,e1_0.date,e1_0.description,e1_0.name,e1_0.time,e1_0.venue from events e1_0
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0 where upper(l1_0.name) like upper(?) escape '\\'
+Hibernate: insert into locations (building,category,contact,description,latitude,longitude,name,opening_hours) values (?,?,?,?,?,?,?,?)
+Hibernate: select count(*) from locations l1_0 where l1_0.id=?
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0 where l1_0.id=?
+Hibernate: delete from locations where id=?
+Hibernate: select l1_0.id,l1_0.building,l1_0.category,l1_0.contact,l1_0.description,l1_0.latitude,l1_0.longitude,l1_0.name,l1_0.opening_hours from locations l1_0 where upper(l1_0.name) like upper(?) escape '\\'
+
+> Task :bootRun FAILED
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':bootRun'.
+> Process 'command 'C:\Program Files\JetBrains\IntelliJ IDEA 2025.1\jbr\bin\java.exe'' finished with non-zero exit value 1
+
+* Try:
+> Run with --stacktrace option to get the stack trace.
+> Run with --info or --debug option to get more log output.
+> Run with --scan to get full insights.
+> Get more help at https://help.gradle.org.
+
+BUILD FAILED in 15m 30s
+4 actionable tasks: 3 executed, 1 up-to-date

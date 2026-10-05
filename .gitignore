@@ -1,0 +1,26 @@
+# Gradle
+.gradle/
+**/.gradle/
+
+# Build output
+build/
+**/build/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# Android
+local.properties
+
+# Node.js
+node_modules/
+**/node_modules/
+
+# Environment files
+.env
+*.env
+
+# OS files
+.DS_Store
+Thumbs.db

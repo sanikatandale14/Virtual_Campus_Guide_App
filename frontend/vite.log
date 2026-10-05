@@ -1,0 +1,12 @@
+
+  [32m[1mVITE[22m v5.4.21[39m  [2mready in [0m[1m1099[22m[2m[0m ms[22m
+
+  [32m➜[39m  [1mLocal[22m:   [36mhttp://localhost:[1m3000[22m/[39m
+[2m  [32m➜[39m  [1mNetwork[22m[2m: use [22m[1m--host[22m[2m to expose[22m
+[2m4:54:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Home.jsx, /src/pages/LocationDetails.jsx, /src/pages/Facilities.jsx, /src/pages/Locations.jsx, /src/pages/Departments.jsx, /src/pages/CampusMap.jsx, /src/pages/Events.jsx[22m
+[2m4:54:59 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/components/Navbar.jsx[22m
+[2m4:55:12 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.jsx[22m
+[2m4:56:39 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/CampusMap.jsx[22m
+[2m4:56:48 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/LocationDetails.jsx[22m
+[2m4:56:52 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/pages/Locations.jsx[22m
+[2m4:57:54 pm[22m [36m[1m[vite][22m[39m [32mhmr update [39m[2m/src/App.css[22m
